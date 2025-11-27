@@ -37,7 +37,7 @@ This document outlines the fictional API structure used during the aggregator in
 
 **POST** `/transactions/airtime`
 
-### Request
+#### Request
 ```json
 {
   "msisdn": "2348012345678",
@@ -46,9 +46,36 @@ This document outlines the fictional API structure used during the aggregator in
   "ref": "TXN-1002922"
 }
 ```
+#### Response
+```json
+{
+  "status": "success",
+  "code": "00",
+  "description": "Airtime Top-up Successful",
+  "reference": "AGG-98111232"
+}
+```
 
+### 2.3 Funds Transfer
 
+**POST** `/transactions/transfer`
 
+#### Request
+```json
+{
+  "sourceAccount": "1234567890",
+  "destinationAccount": "0987654321",
+  "amount": "2000",
+  "narration": "USSD Transfer",
+  "ref": "TXN-883712"
+}
+```
+#### Possible Responses
 
+```json
+{ "code": "00", "message": "Transfer Successful" }
+{ "code": "91", "message": "Issuer or Switch Inoperative" }
+{ "code": "52", "message": "Insufficient Funds" }
+```
 
 
