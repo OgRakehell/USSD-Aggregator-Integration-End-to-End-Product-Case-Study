@@ -140,7 +140,7 @@ Full details:
 
 ---
 
-## **8. Glossary (Optional but Helpful)**
+## **8. Glossary**
 
 * **P95 Latency** — The latency value below which 95% of requests fall. Useful for understanding worst-case user experiences.
 * **Session Hop** — A single request/response round between user, aggregator, and bank.
