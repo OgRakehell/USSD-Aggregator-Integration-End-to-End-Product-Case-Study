@@ -28,50 +28,50 @@ The work involved aligning technical behaviors with user-facing outcomes, ensuri
 USSD is unforgiving: delays above 2–3 seconds cause dropped sessions, vague system errors, and frustrated users.
 Before the integration, the bank experienced:
 
-High system-induced failures during peak hours
+* High system-induced failures during peak hours
 
-Inconsistent and unclear error messages
+* Inconsistent and unclear error messages
 
-Frequent timeouts caused by slow aggregator cycles
+* Frequent timeouts caused by slow aggregator cycles
 
-No unified structure for journeys across services
+* No unified structure for journeys across services
 
-Limited visibility because logs weren’t standardized
+* Limited visibility because logs weren’t standardized
 
 The business required a new aggregator that delivered:
 
-Faster response times
+* Faster response times
 
-Clean, predictable API contracts
+* Clean, predictable API contracts
 
-Structured error mapping
+* Structured error mapping
 
-Consistent journeys across all USSD services
+* Consistent journeys across all USSD services
 
-Support for expanded features beyond airtime and bills
+* Support for expanded features beyond airtime and bills
 
 ---
 ## **3. My Role (What I Owned End-to-End)**
 
 As the Product Analyst, I was responsible for:
 
-Mapping full USSD journeys for airtime, bills, transfers, statements, and error paths
+* Mapping full USSD journeys for airtime, bills, transfers, statements, and error paths
 
-Reviewing aggregator API specifications and aligning payload/response structures
+* Reviewing aggregator API specifications and aligning payload/response structures
 
-Designing the request–response mapping for all service flows
+* Designing the request–response mapping for all service flows
 
-Creating user-friendly error translation logic
+* Creating user-friendly error translation logic
 
-Working with Engineering on retry and timeout behavior
+* Working with Engineering on retry and timeout behavior
 
-Writing and executing the UAT test suite
+* Writing and executing the UAT test suite
 
-Leading latency and performance validation
+* Leading latency and performance validation
 
-Analyzing logs during rollout and stabilization
+* Analyzing logs during rollout and stabilization
 
-Supporting go-live activities
+* Supporting go-live activities
 
 ---
 
@@ -79,17 +79,17 @@ Supporting go-live activities
 
 The integration aimed to:
 
-Enable a new aggregator for all USSD services
+* Enable a new aggregator for all USSD services
 
-Standardize journeys across the entire menu
+* Standardize journeys across the entire menu
 
-Improve latency performance
+* Improve latency performance
 
-Establish structured error mapping
+* Establish structured error mapping
 
-Create full UAT documentation
+* Create full UAT documentation
 
-Provide dashboards and insights for ongoing monitoring
+* Provide dashboards and insights for ongoing monitoring
 
 ---
 ## **5. Approach (How I Executed the Integration Work)**
@@ -299,20 +299,9 @@ USSD-Aggregator-Integration/
 
 ---
 
-## **14. Why This Project Matters**
+## **14. Closing Note**
 
-This case study demonstrates practical abilities in:
-
-* Product analysis
-* System-level thinking
-* Journey mapping
-* UAT design
-* Requirements translation
-* API interpretation
-* Problem diagnosis
-* User-centric product refinement
-
-It reflects an end-to-end view of how a Product Analyst or PM understands and improves digital banking experiences.
+This case study captures the full lifecycle of a USSD aggregator integration—from diagnosing user-journey failures to defining system behaviors, documenting APIs, designing UAT flows, and validating performance at scale. It reflects how I approach digital banking as a blend of product thinking, system analysis, and user-focused problem-solving. The goal is simple: create faster, clearer, more reliable experiences for the customers who depend on these channels every day.
 
 ---
 
