@@ -1,60 +1,59 @@
-  # Approach
+## Approach (How I Executed the Integration Work)
 
+The project followed a three-phase workflow designed for clarity, speed, and reduced friction across teams.
 
-1. Diagnose
+### 1. Diagnose (Understand the Problem Before Touching Anything)
 
-Before integration, I analyzed existing USSD logs to identify:
+I began by analyzing historical USSD logs and monitoring dashboards to identify:
 
-- high-failure nodes
+- nodes with high failure rates
 
-- frequent timeout paths
+- timeout-prone transaction paths
 
-- endpoints exceeding 3-second latency
+- endpoints exceeding the 3-second USSD threshold
 
-- mismatches between user expectation and system output
+- UX mismatches between system responses and user expectations
 
-I produced a simple decision-tree visualization showing where users were most likely to drop off.
+This produced a decision-tree map showing where users most frequently dropped off — the foundation for the integration logic.
 
+### 2. Integrate (Design the Interaction Between Aggregator ↔ Bank Systems)
 
+I collaborated with both the Aggregator team and Engineering to align:
 
-2. Integrate
+- API payload standards
 
-I collaborated with the aggregator and Engineering to align:
+- session handling formats
 
-- API payload structure
+-  and security flow
 
-- Authentication mechanism
+- transaction lifecycle behavior (initiate → authorize → confirm)
 
-- Transaction lifecycle behavior
+- error mapping (raw aggregator errors → user-friendly messages)
 
-- Error-handling logic
+- callback/update sequences
 
-- Callback/update flows
+This phase established the “contract” that ensures consistency across all USSD menus and services.
 
+### 3. Validate (UAT + Performance Stress Testing)
 
-
-3. Validate (UAT + Performance Testing)
-
-I created and executed UAT test cases covering:
+I designed and executed a comprehensive test suite covering:
 
 - happy paths
 
-- negative paths
+- negative and invalid-input scenarios
 
-- invalid inputs
+- latency spikes
 
 - aggregator downtime
 
-- delayed responses
+- reconnection behavior
 
-- edge-case flows (e.g., input errors, session expiry)
+- transaction reversals and edge-case journeys
 
-- Latency testing was conducted with Engineering, targeting:
+  Performance testing targeted:
 
-P95 < 1.5s
+- P95 < 1.5 seconds
 
-P99 < 2.0s
+- P99 < 2.0 seconds
 
-USSD is unforgiving, so achieving these targets was crucial.
-
-
+Achieving this was essential because USSD terminates sessions aggressively if responses delay.
