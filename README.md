@@ -198,8 +198,10 @@ A full error-mapping table was created to:
 * Translate aggregator error codes → user-facing messages
 * Assign severity levels
 * Provide recommended business responses
+* 
+See:
+**[`/Assets/Error Mapping Table.md`](./Assets/Error-Mapping-Table.md)**
 
-**[`/Assets/Error Mapping Table.md`](./Assets/Error Mapping Table.md)**
 This significantly reduced user confusion and improved completion rate during UAT.
 
 ---
