@@ -23,6 +23,75 @@ The objective was to deliver a stable, low-latency USSD experience for core serv
 The work involved aligning technical behaviors with user-facing outcomes, ensuring every hop in the system produced predictable responses.
 
 ---
+## **2. Problem Statement (Why This Integration Was Needed)**
+
+USSD is unforgiving: delays above 2–3 seconds cause dropped sessions, vague system errors, and frustrated users.
+Before the integration, the bank experienced:
+
+High system-induced failures during peak hours
+
+Inconsistent and unclear error messages
+
+Frequent timeouts caused by slow aggregator cycles
+
+No unified structure for journeys across services
+
+Limited visibility because logs weren’t standardized
+
+The business required a new aggregator that delivered:
+
+Faster response times
+
+Clean, predictable API contracts
+
+Structured error mapping
+
+Consistent journeys across all USSD services
+
+Support for expanded features beyond airtime and bills
+
+---
+## **3. My Role (What I Owned End-to-End)**
+
+As the Product Analyst, I was responsible for:
+
+Mapping full USSD journeys for airtime, bills, transfers, statements, and error paths
+
+Reviewing aggregator API specifications and aligning payload/response structures
+
+Designing the request–response mapping for all service flows
+
+Creating user-friendly error translation logic
+
+Working with Engineering on retry and timeout behavior
+
+Writing and executing the UAT test suite
+
+Leading latency and performance validation
+
+Analyzing logs during rollout and stabilization
+
+Supporting go-live activities
+
+---
+
+## **4. Objectives (What Success Looked Like)**
+
+The integration aimed to:
+
+Enable a new aggregator for all USSD services
+
+Standardize journeys across the entire menu
+
+Improve latency performance
+
+Establish structured error mapping
+
+Create full UAT documentation
+
+Provide dashboards and insights for ongoing monitoring
+
+---
 
 ## **2. Architecture Overview**
 
