@@ -1,10 +1,9 @@
 
 # **USSD Aggregator Integration — End-to-End Product Case Study**
 
-This case study is a fictional reconstruction inspired by real digital-banking operations.
-All flows, data, APIs, and diagrams have been anonymized and redesigned for learning and portfolio purposes.
+This case study is a fictionalized yet authentic reconstruction inspired by hands-on experience with digital banking integrations. All flows, data, APIs, and diagrams have been deliberately anonymized and redesigned to showcase core competencies while respecting confidentiality.
 
-The project demonstrates how a Product Analyst approaches the full lifecycle of integrating a **USSD banking service** with a third-party **aggregator**, covering: systems understanding, user-journey mapping, API analysis, failure diagnosis, requirements translation, testing, and product insights.
+The project highlights a comprehensive approach to integrating a **USSD banking service** with a third-party **aggregator**, reflecting key phases in the product lifecycle: deep system analysis, user-journey mapping, meticulous API evaluation, failure root-cause investigation, precise requirements translation into technical specifications, rigorous testing procedures, and actionable product insights for continuous improvement.
 
 ---
 
