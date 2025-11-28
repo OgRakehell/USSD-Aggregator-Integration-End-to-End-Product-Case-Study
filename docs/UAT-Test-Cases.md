@@ -64,7 +64,7 @@ Due to sensitivity and intellectual property concerns, this is a reconstructed p
 - Zero silent fails.
 - All system fails mapped to clean user messages.
 
-## 5 ### USSD Flow Reference
+## 5. USSD Flow Reference
 
 Refer to the flow below for menu → backend mapping:
 
