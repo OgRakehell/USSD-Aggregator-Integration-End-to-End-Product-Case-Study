@@ -191,14 +191,3 @@ It reflects an end-to-end view of how a Product Analyst or PM understands and im
 
 This project is entirely fictional and created for learning purposes.
 No proprietary or confidential information is included.
-
----
-
-
-If you want, I can also:
-
-* Write a polished LinkedIn post announcing your portfolio
-* Help you create a second case study (mobile onboarding, KYC flow, failed transaction recovery, etc.)
-* Build a matching CV bullet set for this project
-
-This repo can become the centerpiece of your product career.
