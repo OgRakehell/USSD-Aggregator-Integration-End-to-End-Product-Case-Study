@@ -199,8 +199,7 @@ A full error-mapping table was created to:
 * Assign severity levels
 * Provide recommended business responses
 
-![Error Mapping](./Assets/error-mapping-table.png)
-
+**[`/Assets/Error Mapping Table.md`](./Assets/Error Mapping Table.md)**
 This significantly reduced user confusion and improved completion rate during UAT.
 
 ---
@@ -256,7 +255,7 @@ After harmonization, test tuning, and mapping:
 | Metric                                | Before | After              |
 | ------------------------------------- | ------ | ------------------ |
 | Average USSD transaction success rate | 79%    | **93%**            |
-| P95 Latency                           | 4.9s   | **2.8s**           |
+| P95 Latency                           | 4.9s   | **1.5s**           |
 | Error message consistency             | Low    | **High**           |
 | User drop-off (menu depth)            | High   | **Reduced by 40%** |
 
