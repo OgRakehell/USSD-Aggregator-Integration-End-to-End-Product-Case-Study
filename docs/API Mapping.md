@@ -79,3 +79,9 @@ This document outlines the fictional API structure used during the aggregator in
 ```
 
 
+## 3. High-Level Architecture
+
+Below is the architecture for the fictional aggregator integration:
+
+![Architecture Diagram](./assets/architecture-diagram.png)
+
